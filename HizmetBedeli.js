@@ -16,26 +16,26 @@ var elYBMaliyet = document.getElementById("YBMaliyet");
 
 //Sürenin Alınması ve textbox'a yazılması
 
-elSure.addEventListener("change", function() {
-Sure = elSure.options[elSure.selectedIndex].value;
-elHoran.value = Sure
+elSure.addEventListener("change", function () {
+    Sure = elSure.value;
+    elHoran.value = Sure;
 });
 
 //Sınıfın Alınması ve Textbox'a yazılması
 
-elSinif.addEventListener("change", function() {
-Sinif = elSinif.options[elSinif.selectedIndex].value;
-elBMaliyet.value = Sinif
-BMaliyet = Sinif;
+elSinif.addEventListener("change", function () {
+    Sinif = elSinif.value;
+    elBMaliyet.value = Sinif;
+    BMaliyet = Sinif;
 });
 
 
 //Alanın Alınması
 
-elAlan.addEventListener("blur", function() {
-Alan = elAlan.value;
+elAlan.addEventListener("keypress", function () {
+    Alan = elAlan.value;
 
 
-elYBMaliyet.value = (BMaliyet * Alan);
+    elYBMaliyet.value = (BMaliyet * Alan);
 });
 

@@ -1,155 +1,158 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
+<head>
     <!-- Hizmet bedeli hesaplama -->
     <title>Hizmet Bedeli Hesaplama Formu</title>
-    <meta charset="utf-8" />
-  </head>
+    <meta charset="utf-8"/>
+</head>
 
-  <body>
-    <!-- FORM -->
-    <form>
-      <fieldset>
+<body>
+<!-- FORM -->
+<form>
+    <fieldset>
         <table>
-          <tbody>
+            <tbody>
             <!-- SATIR1 -->
-            <tr>              
-              <td>
-                <label for="Sure">İşin Bitirilme Süresi:</label>
-              </td>
-              
-              <td>
-                <select id="Sure">
-                  <option>Seçiniz</option>
-                  <option value="1.43">0-6 Ay</option>
-                  <option value="1.43">1 Yıl</option>
-                  <option value="1.50">1.5 Yıl</option>
-                  <option value="1.50">2 Yıl</option>
-                  <option value="1.65">2.5 Yıl</option>
-                  <option value="1.65">3 Yıl</option>
-                  <option value="1.82">3.5 Yıl</option>
-                  <option value="1.82">4 Yıl</option>
-                  <option value="2.00">4.5 Yıl</option>
-                  <option value="2.00">5 Yıl</option>              
-                </select>              
-              </td>
-              
-              <td>
-                  <input id="Horan" type="text" />
-              </td>              
+            <tr>
+                <td>
+                    <label for="Sure">İşin Bitirilme Süresi:</label>
+                </td>
+
+                <td>
+                    <select id="Sure">
+                        <option>Seçiniz</option>
+                        <option value="1.43">0-6 Ay</option>
+                        <option value="1.43">1 Yıl</option>
+                        <option value="1.50">1.5 Yıl</option>
+                        <option value="1.50">2 Yıl</option>
+                        <option value="1.65">2.5 Yıl</option>
+                        <option value="1.65">3 Yıl</option>
+                        <option value="1.82">3.5 Yıl</option>
+                        <option value="1.82">4 Yıl</option>
+                        <option value="2.00">4.5 Yıl</option>
+                        <option value="2.00">5 Yıl</option>
+                    </select>
+                </td>
+
+                <td>
+                    <input placeholder="Bitirme Süresini Seçiniz" id="Horan" type="text"/>
+                </td>
             </tr>
             <!-- END SATIR1 -->
-            
+
             <!-- SATIR2 -->
             <tr>
-              <td>
-                <label for="Sinif">İnşaatın Sınıfı:</label>
-              </td>
-              
-              <td>
-                <select id="Sinif">
-                  <option>Seçiniz</option>
-                  <option value="110.00">1/A</option>
-                  <option value="170.00">1/B</option>
-                  <option value="270.00">2/A</option>
-                  <option value="370.00">2/B</option>
-                  <option value="430.00">2/C</option>
-                  <option value="590.00">3/A</option>
-                  <option value="700.00">3/B</option>
-                  <option value="750.00">4/A</option>
-                  <option value="860.00">4/B</option>
-                  <option value="960.00">4/C</option>
-                  <option value="1230.00">5/A</option>
-                  <option value="1500.00">5/B</option>
-                  <option value="1710.00">5/C</option>
-                  <option value="2040.00">5/D</option>
-                </select>
-              </td>
-              
-              <td>
-                <input id="BMaliyet" type="text" />
-              </td>
+                <td>
+                    <label for="Sinif">İnşaatın Sınıfı:</label>
+                </td>
+
+                <td>
+                    <select id="Sinif">
+                        <option>Seçiniz</option>
+                        <option value="110.00">1/A</option>
+                        <option value="170.00">1/B</option>
+                        <option value="270.00">2/A</option>
+                        <option value="370.00">2/B</option>
+                        <option value="430.00">2/C</option>
+                        <option value="590.00">3/A</option>
+                        <option value="700.00">3/B</option>
+                        <option value="750.00">4/A</option>
+                        <option value="860.00">4/B</option>
+                        <option value="960.00">4/C</option>
+                        <option value="1230.00">5/A</option>
+                        <option value="1500.00">5/B</option>
+                        <option value="1710.00">5/C</option>
+                        <option value="2040.00">5/D</option>
+                    </select>
+                </td>
+
+                <td>
+                    <input placeholder="Sınıfı Seçiniz" id="BMaliyet" type="text"/>
+                </td>
             </tr>
             <!-- END SATIR2 -->
-            
+
             <!-- SATIR3 ACIKLAMA -->
-            
+
             <!-- END SATIR3 ACIKLAMA -->
-            
+
             <!-- SATIR3 INSAAT ALANI -->
             <tr>
-              <td>
-                <label for="Alan">İnşaat Alanı:</label>
-              </td>
-              
-              <td>
-                <input id="Alan" type="text" />
-              </td>
-              
-              <td></td>
+                <td>
+                    <label for="Alan">İnşaat Alanı:</label>
+                </td>
+
+                <td>
+                    <input id="Alan" type="text"/>
+                </td>
+
+                <td></td>
             </tr>
             <!-- END SATIR3 INSAAT ALANI -->
-            
+
             <!-- SATIR4 BUTONLAR -->
-            
+
             <!-- END SATIR4 BUTONLAR -->
-            
+
             <!-- SATIR 5BIRIM MALIYET -->
             <tr>
-              <td></td>
-              <td>
-                <label for="YBMaliyet">Yapının Birim Maliyeti:</label>
-              </td>
-                
-              <td>
-                <input id="YBMaliyet" type="text" />
-              </td>              
-            </tr>            
+                <td></td>
+                <td>
+                    <label for="YBMaliyet">Yapının Birim Maliyeti:</label>
+                </td>
+
+                <td>
+                    <input id="YBMaliyet" type="text"/>
+                </td>
+            </tr>
             <!-- END SATIR5 BIRIM MALIYET -->
-            
+
             <!-- SATIR6 HIZMET BEDELI -->
             <tr>
-              <td></td>
-              <td>
-                <label for="HBedeli">Hizmet Bedeli:</label>            
-              </td>
-              
-              <td>
-                <input type="text" />
-              </td>
+                <td></td>
+                <td>
+                    <label for="HBedeli">Hizmet Bedeli:</label>
+                </td>
+
+                <td>
+                    <input id="HBedeli" type="text"/>
+                </td>
             </tr>
             <!-- END SATIR6 HIZMET BEDELI -->
-            
+
             <!-- SATIR7 KDV -->
             <tr>
-              <td></td>
-              <td>
-                <label for="Kdv">KDV:</label>
-              </td>
-              
-              <td>
-                <input id="Kdv" type="text" />
-              </td>
+                <td></td>
+                <td>
+                    <label for="Kdv">KDV:</label>
+                </td>
+
+                <td>
+                    <input id="Kdv" type="text"/>
+                </td>
             </tr>
             <!-- END SATIR7 KDV -->
-            
+
             <!-- KDV DAHIL HIZMET BEDELI -->
             <tr>
-              <td></td>
-              <td>
-                <label for="HBedeliKdv">KDV Dahil Hizmet Bedeli:</label>
-              </td>
-                
-              <td>
-                <input id="HBedeliKdv" type="text" />
-              </td>
+                <td></td>
+                <td>
+                    <label for="HBedeliKdv">KDV Dahil Hizmet Bedeli:</label>
+                </td>
+
+                <td>
+                    <input id="HBedeliKdv" type="text"/>
+                </td>
             </tr>
             <!-- END KDV DAHIL HIZMET BEDELI -->
-          </tbody>
-        </table>
-    </fieldset>
-    </form>
-    <!-- END FORM -->
-    <script src="HizmetBedeli.js"></script>
-  </body>
+            </tbody>
+            </table>
+        <!--</table>-->
+        </fieldset>
+    <!--</fieldset>-->
+</form>
+<!-- END FORM -->
+<script src="HizmetBedeli.js"></script>
+</body>
 </html>
+
